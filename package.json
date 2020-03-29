@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-practice",
+  "version": "1.0.0",
+  "description": "Practicing creating front views with Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss build source/tailwind.css -o style.css"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^1.2.0"
+  }
+}

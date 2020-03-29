@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple Card Submit Form
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w-full max-h-screen bg-gray-400">
+    <div class="w-full absolute border-none" style="top: 8%">
+        <div class="max-w-md m-auto relative">
+            <img src="card2svg.svg" class="m-auto">
+            <div class="absolute text-white font-mono leading-relaxed top-0 w-full text-center" style="top: 43%">
+                <p id="cardnumber-display" class="tracking-widest"></p>
+            </div>
+            <div class="absolute h-6 text-white text-sm font-sans uppercase leading-relaxed top-0 text-left"
+                style="top: 64%; left: 19.35%">
+                <p id="cardholder-display" class="tracking-widest max-w-6xl"></p>
+            </div>
+            <div class="absolute text-white font-sans text-sm leading-relaxed top-0 w-full text-center"
+                style="top: 64%; right: -24.7%;">
+                <p id="expiry-display" class="tracking-widest"></p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-md py-24 px-8 m-auto mb-4 mt-24 bg-white rounded shadow-lg">
+        <form class="mt-32 -mb-16">
+            <div class="mb-4">
+                <label class="block text-gray-700 mb-1" for="cardnumber">
+                    <p class="text-xs font-serif font-bold">Card Number</p>
+                </label>
+                <input class="border rounded w-full py-2 px-3 focus:outline-none focus:border-gray-500" id="cardnumber"
+                    type="text" placeholder="XXXX XXXX XXXX XXXX">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 mb-1" for="cardholder">
+                    <p class="text-xs font-serif font-bold">Card Holder</p>
+                </label>
+                <input class="border rounded w-full py-2 px-3 focus:outline-none focus:border-gray-500" id="cardholder"
+                    type="text" placeholder="First name Last name">
+            </div>
+            <div class="flex flex-row -mx-3">
+                <div class="w-full px-3 mb-4">
+                    <label class="block mb-1 text-gray-700" for="month">
+                        <p class="text-xs font-serif font-bold">Expiration Month</p>
+                    </label>
+                    <select class="block w-full border rounded py-2 px-3 focus:outline-none focus:border-gray-500"
+                        id="month">
+                        <option value="none">Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="w-full px-3 mb-4">
+                    <label class="block mb-1 text-gray-700" for="year">
+                        <p class="text-xs font-serif font-bold">Year</p>
+                    </label>
+                    <select class="block w-full border rounded py-2 px-3 focus:outline-none focus:border-gray-500"
+                        id="year">
+                        <option value="none">Year</option>
+                        <option value="20">2020</option>
+                        <option value="21">2021</option>
+                        <option value="22">2022</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                        <option value="26">2026</option>
+                        <option value="27">2027</option>
+                        <option value="28">2028</option>
+                        <option value="29">2029</option>
+                        <option value="30">2030</option>
+                    </select>
+                </div>
+                <div class="w-full px-3 mb-4">
+                    <label class="block mb-1 text-gray-700">
+                        <p class="text-xs font-serif font-bold">CVV</p>
+                    </label>
+                    <input name="cvv"
+                        class="block w-full border rounded py-2 px-3 focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="cvv" placeholder="CVV code">
+                </div>
+            </div>
+            <button
+                class="mt-3 bg-gray-600 hover:bg-blue-800 text-white font-bold py-2 px-3 w-full rounded focus:outline-none focus:shadow-outline"
+                type="button">
+                Submit
+            </button>
+        </form>
+    </div>
+    <p class="text-center text-gray-500 text-xs">
+        &copy;2020 Vladyslav Ganin. MIT.
+    </p>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
